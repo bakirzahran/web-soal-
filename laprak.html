@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Teori HTML</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-image: url(gambar\ kerw.jpeg); /* Menambahkan gambar background */
+            background-size: cover; /* Gambar menutupi seluruh halaman */
+            background-position: center; /* Gambar berada di tengah */
+            background-repeat: no-repeat; /* Tidak mengulang gambar */ 
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #ee0606c9;
+            
+        }
+        h2, h3 {
+            color: #f9070799;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        li {
+            background-color: rgba(255, 255, 255, 0.8); /* Background semi-transparan untuk elemen list */
+            padding: 10px;
+            margin: 8px 0;
+            border-left: 5px solid #ff070799;
+        }
+        li b {
+            color: #000;
+        }
+        .question {
+            background-color: #e3f2fd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .answer {
+            background-color: rgba(255, 255, 255, 0.9); /* Background semi-transparan untuk jawaban */
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+            border-left: 5px solid #e20606;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #555;
+        }
+        .footer a {
+            color: #050dee;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    <b>Laporan Teori HTML<b>
+    </h1>
+    <div class="section">
+        <h2>1. Pertanyaan seputar Tag</h2>
+        <ul>
+            <li>
+                <div class="question"><b>Apa yang dimaksud dengan tag pada HTML?</b></div>
+                <div class="answer">TTag adalah komponen atau bagian pada html yang berfungsi sebagai penanda untuk  awal atau akhir dari sebuah elemen pada html biasanya tag berbentuk kurung siku (<....>) dan didalamnya terdapat nama tag seperti < p >,< body >,< head > dan elemen lainnya</div>
+            </li>
+            <li>
+                <div class="question"><b>Apa itu pembuka dan penutup tag? Apakah hal tersebut terdapat pada semua jenis tag?</b></div>
+                <div class="answer">Pembuka tag yaitu berbentuk kurung siku <...> sebagai awal dan penutup tak berbentuk seperti kurung siku dan biasanya sebelum tag ditambahkan garis miring(/) misalnya < /p > dan ada juga tag yang tidak menggunakan penutup dalam tagnya disebut tag self-closing misalnya < img/ > </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>2. Pertanyaan seputar Elemen</h2>
+        <ul>
+            <li>
+                <div class="question"><b>Apa yang dimaksud dengan elemen?</b></div>
+                <div class="answer">Elemen pada html adalah komponen yang menyusun dokumen pada HTML biasanya terdiri dari tag pembuka maupun tag penutup misalnya < p >......< /p > dan ada juga elemen yang menngunakan tak penutup < img/ >
+                    dalam 
+                    </div>
+            </li>
+            <li>
+                <div class="question"><b>Apa yang dimaksud dengan tagname, attribute, dan content pada elemen?</b></div>
+                <div class="answer">
+                    Tag name : nama tag yang digunakan atau berada dalam tag HTML pembuka maupun penutup misalnya < p >
+                        Attribute : yaitu informasi tambahan pada elemen HTML yang ditambahkan dalam tag misalnya src,tittle maupun class
+                        
+                </div>
+            </li>
+            <li>
+                <div class="question"><b>Apakah elemen dapat ditumpuk? Apa yang terjadi bila demikian?</b></div>
+                <div class="answer"> Secara praktek,benar elemen dapat di tumpuk asalkan mememenuhi struktur dalam menumpuknya sehingga ketilka kita jalankan program apabila strukturnya benar maka memenuhi struktur yang kita inginkan dan apabila kita menyusun atau menumpuk elemen secara asal asalan atau tidak memenuhi struktur maka akan menampilkan elemen tidak terstruktur dalam tampilannya dan bisa saja HTML menjadi tidak valid. </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Pertanyaan seputar Anchor</h2>
+        <ul>
+            <li>
+                <div class="question"><b>Apa yang dimaksud dengan anchor?</b></div>
+                <div class="answer">Anchor adalah komponen dalam html berupa  elemen yang difungsikan atau digunakan untuk membuat tautan atau link ke halaman lain atau teks yang dapat diklik dalam halaman web yang bertujuan untuk mempermudah user dalam berpindah ke halaman web lainnya.</div>
+            </li>
+            <li>
+                <div class="question"><b>Bagaimana caranya anchor dapat berfungsi, baik dari sisi pendefinisian maupun pengaplikasiannya?</b></div>
+                <div class="answer"> •	Dalam sisi pendefinisian 
+                    Anchor biasnaya menggunakan tag <a> dalam HTML yang bertujuan agar tautan dapat berfungsi dengan benar didalan sisi pendefinisian dalam anchor (tautan) terdapat 3 atribut yang penting atau biasa digunakan seperti:
+                    1.	href, yang berguna untuk menentukan tujuan atau arah tautan tersebut yang dituju biasanya menuju halaman web lain maupun file atau elemen elemen tertentu.
+                    Contoh menggunakan atribut Href : < a href="/about.html">Tentang laprak < /a >
+                    2.	Target, target ini bersifat opsional yang dimana dalam menggunakannya memiliki tujuan yaitu dimana tautan atau link ingin dibuka biasanya terdiri seperti target =”_blank”
+                    Contoh dalam bentuk sourcecode dalam HTML:
+                    < a href="https://www.Laprakpemweb.com" target="_blank">Buka di Tab Baru< /a>
+                    3.	Title, title ini sama dengan target yang bersifat opsional yang dimana ketika kita menggunakannya      memliki tujuan memberikan informasi tambahan ketika user mengarahkan kursor atau panel petunjuk ke tautan
+                    
+                    
+                    Contoh dalam sourcecode HTML :
+                    < a href="https://www.LaprakPemweb.com" title="Menuju ke situsatau tautan  contoh">Kunjungi Situs atau tautan < / a>
+                    •	Dalam sisi Pengakplikasian
+                    1.	Tautan Eksternal ke situs lain 
+                    Bentuk sourcecode:
+                    < a href="https://www.LaprakPemweb.com">Kunjungi Situs Contoh< /a >
+                    Dalam sourcecode diatas menggunakan href dan menambahkan url absolut yang dimana ketika menekan tautan akan berpindah ke web lain diluar situs 
+                    2.	Tautan dokumen atau file 
+                    Dalam anchor  dapat digunakan untuk mengarahkan user ke dokumen serperti pdf  maupun gambar yang menggunakan URL atau absolut yang bertujuan untuk menuju ke file.
+                    Bentuk surcecode pada dokumen:
+                    < a href="/dokumen/file.jpg">Baca Dokumen< /a > 
+                    </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. Pertanyaan seputar Multimedia</h2>
+
+        <h3>A. Teks</h3>
+        <ul>
+            <li>
+                <div class="question"><b>Sebutkan tag yang dapat digunakan untuk memanipulasi konten teks pada html, serta jelaskan fungsinya!</b></div>
+                <div class="answer">< b > : membuat teks menjadi Tebal dalam tag ini ketika kita menulis < b > akan mengubah teks kita yang berawal dari tulisan biasa menjadi tulisan yang tebal 
+                    < i > : membuat teks menjadi miring dalam tag ini ketika kita menulis < i > akan mengubah teks kita yang berawal dari tulisan biasa menjadi tulisan yang miring
+                    < u > : memberikan garis bawah  dalam tag ini ketika kita menulis < u >  akan mengubah teks kita yang berawal dari tulisan biasa menjadi tulisan yangmemiliki garis bawah
+                    < small > : membuat teks lebih kecil dari teks sekitarnya
+                    </div>
+            </li>
+            <li>
+                <div class="question"><b>Sebutkan tag yang dapat digunakan untuk memanipulasi struktur konten teks pada html!</b></div>
+                <div class="answer">< br > : pada br menambahakan baris baru tanpa membuat pragraf baru yang dimana tujuan agar penulisan dalam web kita lebih rapih dan dalam tag ini tidak memiliki penutup digunakan pemisah baris
+                    < h1 > ..........< h6 > : Tag ini membuat heading atau judul dari tingkat yang tinggi ke tingkat yang rendah biasanya < h1>  digunakan sebagai heading utama dan < h6 > sebagai headingan yang paling rendah
+                    < p > : Tag ini memiliki tujuan dengan membuat pragraph baru dalam kalimat yang dimana membuat teks pragraph terpisah dengan teks pragraph yang lain dan dapat memberikan penuisan yang rapih dan memudahkan pembaca memahami batas pragraph
+                    </div>
+            </li>
+        </ul>
+
+        <h3>B. Gambar</h3>
+        <ul>
+            <li>
+                <div class="question"><b>Apabila sebuah tag image tidak menampilkan gambar sebagaimana seharusnya, apa saja yang mungkin menyebabkan hal tersebut?</b></div>
+                <div class="answer">Ketika image tidak tampil dalam halaman web yang kita buat bisa saja hal itu terjadi karena salah url sumber gambar yang kita masukkan sehingga ketika kita ingin memanggil gambar yang di inginkan tidak terbaca atau tidak muncul dan hal yang terjadi ketika image tidak keluar yaitu tidak memasukkan gambar yang ingin di upload ke lokasi folder yang sama dengan file codingan sehingga image yang di masukkan tidak bisa terbaca kemudian kesalahan format file artinya gambar yang ingin ditampilkan tidak didukung oleh browser misalnya format tidak dikenal dan yang terakhir biasanya gambar tidak tampil disebabkan oleh masalah jaringan yang dimana ketika jaringan lambat atau putus gambar tidak akan dimuat.</div>
+            </li>
+            <li>
+                <div class="question"><b>	Apabila ternyata ada teks yang menggantikan gambar tersebut, apa yang sebenarnya terjadi? Jelaskan!</b></div>
+                <div class="answer">Ketika kita ingin menampilkan gambar dan ternyata yang tampil bukan  teks maka hal itu terjadi karena url atau sumber gambar yang ingin ditampilkan tidak terbaca sehingga akan menampilkan deskripsi dari gambar yang kita ingin tampilkan atau menampilkan nilai dari atribut alt dari tag < img >.
+                    < img src="gambar-tidak-ada.jpg" alt="Gambar gunung yang indah">
+                    Tanda merah merupakan url sumber gambar  ketika url tidak sesuai bisa saja akan menampilkan nilai dari alt (kalimat berwarna biru)
+                    </div>
+            </li>
+        </ul>
+
+        <h3>C. Audio</h3>
+        <ul>
+            <li>
+                <div class="question"><b>Bagaimana caranya untuk kita dapat memasukkan audio source dari web (non-lokal)? Jelaskan!</b></div>
+                <div class="answer">Cara untuk memasukkan audio dari web non local yaitu kita menambahkan audio yang ingin dimasukkan kedalam folder yang sama dengan folder codingan HTML yang kita buat apabila kita tidak memasukkan audio dalam file yang sama maka audio tidak bisa tampil dalam sourcecode kemudian didalam source code kita menambahkan tag < audio > kemudian set atribut src untuk memanggil audio yang telah kita masukkan dalam folder ketika sudah memasukkan audio kita menambahkan controls untuk kontrol pemutaran pada browser.</div>
+            </li>
+        </ul>
+
+        <h3>D. Video</h3>
+        <ul>
+            <li>
+                <div class="question"><b>Apa yang biasanya terjadi apabila atribut autoplay pada tag video tidak berjalan? Apa yang anda harus lakukan sehingga atribut tersebut dapat berfungsi dengan semestinya?</b></div>
+                <div class="answer"> Atribut autoplay pada tag < video > tidak berjalan dikarenakan video yang dimasukkan memiliki audio dan juga pengaturan default dari browser atau  kebijakan privasi dari browser yang kita pilih yang Dimana akan menganggu user, video yang dapat autoplay biasa video yang tidak memiliki audio.
+                    Hal yang harus ditambahakan Ketika video autoplay yaitu mematikan audio dengan menambahkan atribut muted pada tag < video > sehingga video kita dapat autoplay tetapi tidak memiliki audio atau suara untuk mengaktifkan suaranya kita tinggal menekan tombol muted pada video Ketika sudah tampil dalam halaman web Adapun cara yang lain yaitu dengan mengatur pengaturan pada browser dengan mengubah pemutaran otomatis di pengaturan privasi atau media pada browser tertentu.
+                    </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>Terima kasih telah membaca laporan ini!  <a href="#">bakir zahran</a>.</p>
+    </div>
+
+</body>
+</html>
